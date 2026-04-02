@@ -2,66 +2,41 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 class Program
 {
-
-static void  räkningssortering(int[] arr) {
-    int[] count = new int[101]; // Assuming the range of integers is from 0 to 100
-    for (int i = 0; i < arr.length; i++) {
-        count[arr[i]]++;
-    }
-    int index = 0;
-    for (int i = 0; i < count.length; i++) 
+    static void räkningssortering(int[] arr)
     {
+        int[] count = new int[101]; // Assuming the range of integers is from 0 to 100
+        for (int i = 0; i < arr.length; i++)
+        {
+            count[arr[i]]++;
+        }
+        int index = 0;
+        for (int i = 0; i < count.length; i++)
+        {
+        }
     }
-}
 
-        
-    
-static void main(string[]args)
-{
-int[] size = {100, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000};
-int targetnumber = 54;
-int numberOffRuns = 10;
-
-
-random rand = new random(42);
-foreach (int n in size)
-{
-    int[] arr = new int[n];
-    for (int i = 0; i < n; i++)
+    static void main(string[] args)
     {
-        arr[i] = rand.Next(1, 101); 
+        var csv = new StringBuilder();
+        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "resultat.csv");
+
+        int[] size = { 100, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000 };
+        int targetnumber = 54;
+        int numberOffRuns = 10;
+
+        random rand = new random(42);
+        foreach (int n in size)
+        {
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = rand.Next(1, 101);
+            }
+            File.WriteAllText(filePath, csv.ToString());
+        }
     }
-
-
 }
-}
-}
-
-    
-
-
-
-
-
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-    
