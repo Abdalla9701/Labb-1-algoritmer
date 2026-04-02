@@ -1,35 +1,36 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Text;
 
-Console.WriteLine("Hello, World!");
 class Program
 {
     static void räkningssortering(int[] arr)
     {
-        int[] count = new int[101]; // Assuming the range of integers is from 0 to 100
-        for (int i = 0; i < arr.length; i++)
+        int[] count = new int[101];
+        for (int i = 0; i < arr.Length; i++)  
         {
             count[arr[i]]++;
         }
         int index = 0;
-        for (int i = 0; i < count.length; i++)
+        for (int i = 0; i < count.Length; i++)
         {
+          
         }
     }
 
-    static void main(string[] args)
+    static void Main(string[] args)  
     {
         var csv = new StringBuilder();
         string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "resultat.csv");
+        
+        csv.AppendLine("Storlek;Tid_ms");
 
         int[] size = { 100, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000 };
         int targetnumber = 54;
         int numberOffRuns = 10;
 
-        random rand = new random(42);
+        Random rand = new Random(42); 
         foreach (int n in size)
         {
             int[] arr = new int[n];
@@ -37,7 +38,24 @@ class Program
             {
                 arr[i] = rand.Next(1, 101);
             }
-            File.WriteAllText(filePath, csv.ToString());
+            
+         
+            double total = 0;
+            for (int run = 0; run < numberOffRuns; run++)
+            {
+                Stopwatch sw = Stopwatch.StartNew();
+               
+                int antal = 0;
+                for (int i = 0; i < arr.Length; i++) if (arr[i] == targetnumber) antal++;
+                sw.Stop();
+                total += sw.Elapsed.TotalMilliseconds;
+            }
+            
+            double snitt = total / numberOffRuns;
+            csv.AppendLine(n + ";" + snitt.ToString().Replace('.', ','));
         }
+        
+        File.WriteAllText(filePath, csv.ToString());
+        Console.WriteLine("KLAR! Filen är på skrivbordet!");
     }
 }

@@ -1,0 +1,15 @@
+c:\Users\cabda\Labb 1 algoritmer\bin\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.exe
+c:\Users\cabda\Labb 1 algoritmer\bin\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.deps.json
+c:\Users\cabda\Labb 1 algoritmer\bin\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.runtimeconfig.json
+c:\Users\cabda\Labb 1 algoritmer\bin\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.dll
+c:\Users\cabda\Labb 1 algoritmer\bin\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.pdb
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.AssemblyInfoInputs.cache
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.AssemblyInfo.cs
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.csproj.CoreCompileInputs.cache
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.sourcelink.json
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.dll
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\refint\Labb 1 algoritmer och tidskomplexitet.dll
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.pdb
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\Labb 1 algoritmer och tidskomplexitet.genruntimeconfig.cache
+c:\Users\cabda\Labb 1 algoritmer\obj\Debug\net8.0\ref\Labb 1 algoritmer och tidskomplexitet.dll
